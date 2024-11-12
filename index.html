@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Blog</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    
+    <style>
+      /* Estilo geral */
+      body {
+        background-color: #fffcfc; /* Cor cinza médio */
+        font-family: Arial, sans-serif;
+      }
+
+      /* Top Bar com cor azul */
+      .top-bar {
+        background-color: #eee; /* Azul */
+        color: rgb(0, 0, 0);
+      }
+
+      .top-bar .menu a {
+        color: rgb(0, 0, 0); /* Texto branco */
+      }
+
+      .top-bar .menu a:hover {
+        color: #4f78e9; /* Amarelo quando passar o mouse */
+      }
+
+      /* Banner com imagem como fundo e tamanho reduzido */
+      .banner {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      /* Imagem do banner com altura reduzida */
+      .banner img {
+        width: 100%;
+        max-height: 300px; /* Altura máxima reduzida para 300px */
+        object-fit: cover; /* Corta a imagem se necessário para preencher a área */
+      }
+
+      /* Texto centralizado sobre a imagem */
+      .banner .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para melhorar a legibilidade */
+      }
+      .subheader {
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+.callout {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(10, 10, 10, .25);
+    border-radius: 0;
+    position: relative;
+    background-color: #bebcb8;
+}
+
+
+      /* Responsividade para telas pequenas */
+      @media only screen and (max-width: 768px) {
+        .top-bar .menu {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Blog</li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Log In</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+    <!-- Banner com imagem e texto no topo da página -->
+    <div class="banner">
+      <img src="img/homepage.jpg" alt="Banner Image"> <!-- Substitua pela sua imagem -->
+      <div class="text-overlay">
+        <h1>Destinos Europeus Essenciais para 2025</h1>
+        <h2 class="subheader">Você está pronto para viajar?</h2>
+      </div>
+    </div>
+    <!-- We can now combine rows and columns when there's only one column in that row -->
+    <div class="row medium-8 large-7 columns">
+        <div class="blog-post">
+          <h3>Roma, Itália  <small>A Cidade Eterna</small></h3>
+          <img class="thumbnail" src="img/roma.jpg">
+          <p>Em Roma, cada monumento é um portal para o passado e uma promessa de encantamento. História e modernidade se encontram em Roma. Visite o Coliseu, explore o Vaticano e perca-se nas ruas cheias de charme e delícias italianas. Experiências únicas a cada esquina!</p>
+          <div class="callout">
+            <ul class="menu simple">
+              <li><a href="#">Author: Chatgpt</a></li>
+              <li><a href="#">Comentários: 3</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="blog-post">
+          <h3>Paris, França <small>O Encanto da Cidade Luz</small></h3>
+          <img class="thumbnail" src="img/paris.jpg">
+          <p> Paris é um convite para o romance, a arte e a sofisticação - viva o sonho em cada avenida. Deixe-se levar pelo romance parisiense. Admire a Torre Eiffel, explore os museus icônicos e curta a atmosfera dos cafés nas calçadas.</p>
+          <div class="callout">
+            <ul class="menu simple">
+              <li><a href="#">Author: Chatgpt</a></li>
+              <li><a href="#">Comentários: 3</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="blog-post">
+          <h3>Lisboa, Portugal <small>O Charme à Beira do Atlântico</small></h3>
+          <img class="thumbnail" src="img/lisbon.jpg">
+          <p>Lisboa é uma cidade de contrastes encantadores, onde a tradição se mistura com o novo. Entre as colinas de Lisboa, explore o passado e o presente da capital portuguesa. Prove pastéis de nata, admire o pôr do sol e sinta o ritmo das ruas históricas. </p>
+          <div class="callout">
+            <ul class="menu simple">
+              <li><a href="#">Author: Chatgpt</a></li>
+              <li><a href="#">Comentários: 3</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="blog-post">
+          <h3>Bruxelas, Bélgica <small>O Coração da Europa</small></h3>
+          <img class="thumbnail" src="img/belgica.jpg">
+          <p>Descubra Bruxelas, uma cidade cosmopolita e charmosa. Da arquitetura medieval às cervejas artesanais, Bruxelas promete surpreender. Rica em cultura e sabores únicos, Bruxelas encanta com sua Grand Place e suas deliciosas waffles.</p>
+          <div class="callout">
+            <ul class="menu simple">
+              <li><a href="#">Author: Chatgpt</a></li>
+              <li><a href="#">Comentários: 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+     
+  
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    
+    </script>
+  </body>
+</html>
